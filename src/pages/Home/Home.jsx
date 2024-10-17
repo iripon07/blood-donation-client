@@ -1,9 +1,9 @@
-import Contact from "../../components/Home/Contact";
+import Banner from "../../components/Home/Banner";
 
 const Home = () => {
   return (
-    <div>
-      <Contact />
+    <div className="container mx-auto">
+      <Banner />
     </div>
   );
 };

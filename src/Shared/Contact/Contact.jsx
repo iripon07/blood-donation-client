@@ -6,11 +6,9 @@ const Contact = () => {
     <div className="bg-primary">
       <div className="container mx-auto py-10">
         <div
-          style={{ border: "1px solid yellow" }}
           className="flex justify-between items-center text-white text-3xl"
         >
           <div
-            style={{ border: "1px solid yellow" }}
             className="flex items-center space-x-2"
           >
             <MdOutlineMail />
