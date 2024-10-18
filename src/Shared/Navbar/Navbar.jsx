@@ -4,19 +4,18 @@ import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto">
       <div
-        style={{ border: "1px solid red" }}
-        className="flex justify-between items-center h-[100px]"
+        className="flex justify-between items-center"
       >
         <div >
           <img
             src={logo}
-            className="w-[150px] h-[50px]"
+            className="w-[100px] h-[100px]"
             alt="Logo of the site"
           />
         </div>
-        <div className="text-xl text-secondary space-x-2">
+        <div className="text-xl text-secondary space-x-4">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/campaign">Campaign</NavLink>
           <NavLink to="/blogs">Blogs</NavLink>
