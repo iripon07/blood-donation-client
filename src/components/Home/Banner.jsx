@@ -1,30 +1,48 @@
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Banner1 from "../../assets/Banner1.jpg";
 import Banner2 from "../../assets/Banner2.jpg";
 import Banner3 from "../../assets/Banner3.jpg";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Styles from "./Banner.module.css"
+import "./banner.css"
 
 
 const Banner = () => {
   return (
     <div>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper
+        spaceBetween={30}
+        loop={true}
+        centeredSlides={true}
+        slidesPerView={1}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
         <SwiperSlide>
           <div>
-            <img src={Banner1} alt="" />
+            <img className="w-full md:h-[600px] h-full" src={Banner1} alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src={Banner2} alt="" />
+            <img className="w-full md:h-[600px] h-full" src={Banner2} alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <div>
-            <img src={Banner3} alt="" />
+            <img className="w-full md:h-[600px] h-full" src={Banner3} alt="" />
           </div>
         </SwiperSlide>
       </Swiper>
