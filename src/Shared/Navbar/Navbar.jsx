@@ -1,4 +1,4 @@
-import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
@@ -13,7 +13,8 @@ const Navbar = () => {
             alt="Logo of the site"
           />
         </div>
-        <div className="text-xl text-secondary space-x-4">
+
+        <div className="text-xl text-secondary space-x-4 hidden md:block">
           <NavLink
             className={({ isActive }) =>
               isActive
@@ -71,9 +72,15 @@ const Navbar = () => {
             About Us
           </NavLink>
         </div>
-        <div className="text-xl text-secondary space-x-2">
-          <Link>Login</Link>
-          <Link>Sign Up</Link>
+
+        <div className="text-xl text-secondary">
+          <div className="hidden md:block  space-x-2">
+            <Link>Login</Link>
+            <Link>Sign Up</Link>
+          </div>
+          <div className="block md:hidden">
+            <GiHamburgerMenu />
+          </div>
         </div>
       </div>
     </div>

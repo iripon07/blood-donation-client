@@ -4,7 +4,7 @@ import { PiLineVertical } from "react-icons/pi";
 
 const Contact = () => {
   return (
-    <div className="bg-primary ">
+    <div className="bg-primary hidden md:block">
       <div className="container mx-auto py-10">
         <div className="flex justify-between items-center text-white text-3xl">
           <div className="flex items-center">
