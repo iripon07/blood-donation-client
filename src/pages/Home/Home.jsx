@@ -1,9 +1,11 @@
 import Banner from "../../components/Home/Banner";
+import BecomeDonor from "../../components/Home/BecomeDonor";
 
 const Home = () => {
   return (
-    <div className="container mx-auto">
+    <div>
       <Banner />
+      <BecomeDonor />
     </div>
   );
 };

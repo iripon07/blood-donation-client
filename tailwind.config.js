@@ -7,9 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#991b1b',
+        primary: '#EF3D32',
         secondary: "#ef4444",
         white: '#FFFFFF',
+        gray: "#1f2937"
       },
       keyframes: {
         slideInLeft: {
